@@ -20,12 +20,33 @@ namespace KnowledgeCheck1_Calculator
 
         public int Multiply(int first, int second)
         {
-            throw new NotImplementedException();
+            return first * second;
         }
 
         public double Divide(double first, double second)
         {
             return first / second;
         }
+
+        public void NoInt()
+        {
+            Console.WriteLine("One or more of the numbers is not an int");
+        }
+
+        /*public int ParseCheckInt()
+        {
+            var firstInput = Console.ReadLine();
+            var secondInput = Console.ReadLine();
+
+            if (int.TryParse(firstInput, out int firstOutput) && int.TryParse(secondInput, out int secondOutput))
+            {
+                return (firstOutput, secondOutput);
+            }
+            else
+            {
+                Console.WriteLine("One or more of the numbers is not an int");
+            }
+        }*/
     }
 }
+
